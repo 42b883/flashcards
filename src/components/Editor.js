@@ -32,7 +32,7 @@ class Editor extends Component {
             <tr key={i}>
                 <td>{card.front}</td>
                 <td>{card.back}</td>
-                <td><button data-index={i} onClick={this.deleteCard}>Delete</button></td>
+                <td><button className="btn " data-index={i} onClick={this.deleteCard}>x</button></td>
             </tr>
         )
     })
@@ -57,15 +57,16 @@ class Editor extends Component {
             onChange={this.handleChange}
             name="front"
             placeholder="Front of Card"/>
+            <br/>
             <input type="text"
             value={this.state.back}
             onChange={this.handleChange}
             name="back"
             placeholder="Back of Card"/>
-
-            <button onClick={this.addCard}>Add Card</button>
+            <br/>
+            <button className="btn btn-sm btn-secondary" onClick={this.addCard}>Add Card</button>
             <hr/>   
-            <button onClick={this.props.switchMode}>Back to Viewer</button>
+            <button className="btn btn-sm btn-secondary" onClick={this.props.switchMode}>Back to Viewer</button>
         </div>
     );
   }

@@ -1,3 +1,22 @@
+body {
+  margin: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.cardContent{
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.7rem;
+}
+.card {
+  background: rgb(239, 255, 97);
+  margin-bottom: 10px;
+}
+.prev {
+  margin-right: 6px;
+}
 table, td, th {
   border: 1px solid black;
 }
